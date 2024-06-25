@@ -13,7 +13,7 @@ namespace InvestimentoMvc.Controllers
 {
     public class UsuariosController : Controller
     {
-        public string uriBase => "http://www.investimento.somee.com/Usuarios/";
+        public string uriBase => "https://invesntimentomvc.azurewebsites.net";
 
         [HttpGet]
         public ActionResult Index()

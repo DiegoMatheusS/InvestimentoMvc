@@ -7,11 +7,12 @@ using InvestimentoMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
+
 namespace InvestimentoMvc.Controllers
 {
     public class InvestimentoController : Controller
     {
-        public string uriBase = "http://www.investimento.somee.com/investimento/";
+        public string uriBase = "https://invesntimentomvc.azurewebsites.net/";
 
         [HttpGet]
         public async Task<ActionResult> IndexAsync()
