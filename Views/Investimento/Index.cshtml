@@ -22,13 +22,13 @@
 <table>
     <tr><!--Títulos das colunas da tabela-->
         <th>@Html.DisplayNameFor(model => model.Id)</th>
-        <th class="alert alert-warning" role="alert">@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
         <th>@Html.DisplayNameFor(model => model.Valor)</th>
-        <th class="alert alert-warning" role="alert">@Html.DisplayNameFor(model => model.Quantidade)</th>
+        <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
         <th>@Html.DisplayNameFor(model => model.Data)</th>
-        <th class="alert alert-warning" role="alert">@Html.DisplayNameFor(model => model.Operacao)</th>
+        <th>@Html.DisplayNameFor(model => model.Operacao)</th>
         <th>@Html.DisplayNameFor(model => model.Lucro)</th>
-        <th class="alert alert-warning" role="alert">@Html.DisplayNameFor(model => model.Prejuizo)</th>
+        <th>@Html.DisplayNameFor(model => model.Prejuizo)</th>
         <th>@Html.DisplayNameFor(model => model.Imposto)</th>
         <th></th>
     </tr>
@@ -36,15 +36,15 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@Html.DisplayFor(modelItem => item.Id)</td>
-            <td>@Html.DisplayFor(modelItem => item.Name)</td>
-            <td>@Html.DisplayFor(modelItem => item.Valor)</td>
-            <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
-            <td>@Html.DisplayFor(modelItem => item.Data)</td>
-            <td>@Html.DisplayFor(modelItem => item.Operacao)</td>
-            <td>@Html.DisplayFor(modelItem => item.Lucro)</td>
-            <td>@Html.DisplayFor(modelItem => item.Prejuizo)</td>
-            <td>@Html.DisplayFor(modelItem => item.Imposto)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Id)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Name)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Valor)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Quantidade)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Data)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Operacao)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Lucro)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Prejuizo)</td>
+            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Imposto)</td>
             <td><!--Coluna para Links/botões-->
                 @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
                 @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
