@@ -19,7 +19,7 @@
 <p> <!--Links apontando para views na mesma pasta-->
     @Html.ActionLink("Criar Nova Moeda", "Create")
 </p>
-<table>
+<table class="alert alert-info">
     <tr><!--Títulos das colunas da tabela-->
         <th>@Html.DisplayNameFor(model => model.Id)</th>
         <th>@Html.DisplayNameFor(model => model.Name)</th>
@@ -37,13 +37,13 @@
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.Id)</td>
-            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
             <td>@Html.DisplayFor(modelItem => item.Valor)</td>
-            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Quantidade)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantidade)</td>
             <td>@Html.DisplayFor(modelItem => item.Data)</td>
-            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Operacao)</td>
+            <td>@Html.DisplayFor(modelItem => item.Operacao)</td>
             <td>@Html.DisplayFor(modelItem => item.Lucro)</td>
-            <td class="alert alert-warning" role="alert">@Html.DisplayFor(modelItem => item.Prejuizo)</td>
+            <td>@Html.DisplayFor(modelItem => item.Prejuizo)</td>
             <td>@Html.DisplayFor(modelItem => item.Imposto)</td>
             <td><!--Coluna para Links/botões-->
                 @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
